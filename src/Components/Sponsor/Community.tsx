@@ -22,31 +22,43 @@ function Community() {
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
         }}
-        className="w-screen absolute bottom-0 h-[215px] left-0 z-10 p-2 px-4 sm:px-10"
+        className="w-screen absolute md:bottom-0 bottom-1/2 md:h-[215px] h-14 left-0 z-10 p-2 px-4 sm:px-10"
       >
         {/* Large Screen Cards */}
         <div className="hidden md:block relative w-full h-full">
-          <Card borderCorol="#8300FF" top="60" left="0" />
-          <Card borderCorol="#2F6C62" top="-50" left="200" />
-          <Card borderCorol="#FF3B30" bottom="-150" left="350" />
-          <Card borderCorol="#007AFF" bottom="-150" left="550" />
-          <Card borderCorol="#FF3B30" bottom="-150" left="750" />
-          <Card borderCorol="#007AFF" top="-50" left="920" />
-          <Card borderCorol="#FF9500" top="60" left="1100" />
+          <Card borderCorol="#8300FF" top="60" left="50" />
+          <Card borderCorol="#2F6C62" top="-50" left="250" />
+          <Card borderCorol="#FF3B30" bottom="-150" left="400" />
+          <Card borderCorol="#007AFF" bottom="-150" left="600" />
+          <Card borderCorol="#FF3B30" bottom="-150" left="800" />
+          <Card borderCorol="#007AFF" top="-50" left="970" />
+          <Card borderCorol="#FF9500" top="60" left="1150" />
         </div>
 
         {/* Small Screen Cards */}
         <div className="block md:hidden relative w-full h-full">
-          <Card borderCorol="#8300FF" top="30" left="10" />
-          <Card borderCorol="#2F6C62" top="90" left="120" />
-          <Card borderCorol="#FF3B30" bottom="10" left="200" />
-          <Card borderCorol="#007AFF" bottom="50" left="50" />
-          <Card borderCorol="#FF9500" bottom="20" left="300" />
+          <Card borderCorol="#8300FF" top="30" left="40" />
+          <Card borderCorol="#2F6C62" top="30" left="170" />
+          <Card borderCorol="#FF3B30" bottom="10" left="170" />
+          <Card borderCorol="#2F6C62" bottom="10" left="50" />
+          <Card borderCorol="#FF9500" bottom="10" left="300" />
+          <Card borderCorol="#2F6C62" top="30" left="320" />
+          <Card borderCorol="#FF3B30" top="150" left="170" />
         </div>
       </div>
 
+      {/* <div className="hidden md:block lg:hidden relative w-full h-full">
+          <Card borderCorol="#8300FF" top="60" left="50" />
+          <Card borderCorol="#2F6C62" top="-50" left="250" />
+          <Card borderCorol="#FF3B30" bottom="-150" left="400" />
+          <Card borderCorol="#007AFF" bottom="-150" left="600" />
+          <Card borderCorol="#FF3B30" bottom="-150" left="800" />
+          <Card borderCorol="#007AFF" top="-50" left="970" />
+          <Card borderCorol="#FF9500" top="60" left="1150" />
+        </div> */}
+
       {/* Register Button */}
-      <div className="w-full absolute -bottom-16 flex justify-center">
+      <div className="w-full absolute md:-bottom-16 bottom-0 flex justify-center">
         <button className="text-xs sm:text-sm border border-[#A649FF] text-[#A649FF] flex justify-center px-4 sm:px-6 py-2 rounded-2xl">
           Register →
         </button>
