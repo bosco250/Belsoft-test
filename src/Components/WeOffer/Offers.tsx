@@ -1,10 +1,10 @@
 import OfferCard from "./OfferCard";
-import Image1 from '../../assets/IMG_2501 3.png'
-import Image2 from '../../assets/IMG_2519 2.png'
-import Image3 from '../../assets/Vector 3.png'
+import Image1 from "../../assets/IMG_2501 3.png";
+import Image2 from "../../assets/IMG_2519 2.png";
+import Image3 from "../../assets/Vector 3.png";
 function Offers() {
   return (
-    <div className="w-screen px-14 py-16 ">
+    <div className="w-screen px-5 md:px-14 py-10 md:py-16 ">
       <h1 className="w-full text-center font-bold text-2xl mb-10">
         What We Offer
       </h1>
@@ -34,10 +34,10 @@ function Offers() {
         />
       </div>
 
-      <div className=" lineBefore w-full pt-24 flex min-h-[90vh] relative">
-        <div className="w-1/2">
-          <h2 className="text-xl font-bold text-[#8300FF]">Founders Friday</h2>
-          <h1 className="w-1/2 text-2xl font-bold pb-10">
+      <div className=" lineBefore w-full pt-24 flex flex-col md:flex-row min-h-[90vh] relative">
+        <div className="md:w-1/2 w-full  ">
+          <h2 className="text-sm font-bold text-[#8300FF]">Founders Friday</h2>
+          <h1 className="md:w-1/2 text-2xl font-bold pb-10">
             What Happens At Founders Friday
           </h1>
           <p className="text-sm text-[#4C4452] mb-10">
@@ -48,13 +48,27 @@ function Offers() {
             turpis. Pellentesque habitant morbi tristique senectus et netus et
             malesuada fames ac turpis egestas. 
           </p>
-          <button className="text-sm text-white bg-[#8300FF] flex justify-center px-5 py-2 rounded-xl">Learn More →</button>
+          <button className="text-sm text-white bg-[#8300FF] flex justify-center px-5 py-2 rounded-xl ">
+            Learn More →
+          </button>
         </div>
-        <div className="w-1/2 relative">
-        <img src={Image1} alt="" className="absolute w-60 top-[-10px] right-0 z-10 " />
-        <img src={Image2} alt="" className=" absolute w-60 bottom-0 left-[33%] z-20" />
+        <div className="md:w-1/2 md:h-[430px] h-[350px] w-full relative">
+          <img
+            src={Image1}
+            alt=""
+            className="absolute w-48 md:w-60 top-0 right-0 md:top-[-10px] md:right-0 z-10"
+          />
+          <img
+            src={Image2}
+            alt=""
+            className="absolute w-48 md:w-60 bottom-0 left-[40%] transform -translate-x-1/2 md:left-[33%] md:translate-x-0 z-20"
+          />
         </div>
-        <img src={Image3} alt="" className=" absolute top-0 left-[-55px] w-[100%] h-[100%] " />
+        <img
+          src={Image3}
+          alt=""
+          className="absolute md:top-0 bottom-0 left-0 right-0 w-screen scale-x-110 h-1/2 md:w-full md:h-full"
+        />
       </div>
     </div>
   );

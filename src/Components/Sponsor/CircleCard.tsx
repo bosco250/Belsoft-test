@@ -7,9 +7,9 @@ interface myprops{
 const CircleCard:React.FC<myprops>=({bgcolor,title,description})=>{
   return (
     <div style={{backgroundColor:bgcolor}}
-     className={`w-44 h-44 rounded-full border border-purple-700 p-5 flex flex-col justify-center items-center bg-${bgcolor}`}>
-      <h1 className="text-lg font-bold text-center">{title}</h1>
-      <p className="text-[12px] text-center text-[#3C3641]">{description}</p>
+     className={`md:w-44 md:h-44 w-36 h-36 rounded-full border border-purple-700 md:p-5 p-1 flex flex-col justify-center items-center bg-${bgcolor}`}>
+      <h1 className="md:text-lg text-[15px] font-bold text-center">{title}</h1>
+      <p className="md:text-[12px] text-[10px] text-center text-[#3C3641]">{description}</p>
     </div>
   )
 }

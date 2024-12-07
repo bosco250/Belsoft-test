@@ -17,11 +17,39 @@ body{
   background-image: url('./assets/Vector1.png');
   background-repeat: no-repeat;
   background-size: cover;
-  display: block; 
+  display: block;
   width: 120%;
   height: 120%;
-  position: relative; 
-  top: -60px; 
+  position: relative;
+  top: -60px;
   left: -150px;
-  z-index: -1; 
+  z-index: -1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .image-container::before {
+    width: 150%;
+    height: 100%;
+    top: -40px;
+    left: -100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container::before {
+    width: 200%;
+    height: 80%;
+    top: -20px;
+    left: -150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container::before {
+    width: 250%;
+    height: 60%;
+    top: -10px;
+    left: -200px;
+  }
 }
