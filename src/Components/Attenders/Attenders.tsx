@@ -18,11 +18,11 @@ function Attenders() {
           <ArrowRight className="w-full h-full" />
         </div>
       </div>
-      
+
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0 justify-between pt-10">
-        <Card/>
-        <Card/>
-        <Card/>
+        <Card />
+        <Card />
+        <Card />
       </div>
     </div>
   );

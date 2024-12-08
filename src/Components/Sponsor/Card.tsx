@@ -1,5 +1,5 @@
-import React from 'react';
-import profile from '../../assets/profile.png';
+import React from "react";
+import profile from "../../assets/profile.png";
 
 interface CardProps {
   borderCorol?: string;
@@ -18,8 +18,8 @@ const Card: React.FC<CardProps> = ({ borderCorol, top, left, bottom }) => {
           top: top ? `${top}px` : undefined,
           left: left ? `${left}px` : undefined,
           bottom: bottom ? `${bottom}px` : undefined,
-          transform: 'translateX(-50%)', // Centers the card horizontally
-          right: left === undefined ? '0' : undefined, // Handles overflow on the right
+          transform: "translateX(-50%)", // Centers the card horizontally
+          right: left === undefined ? "0" : undefined, // Handles overflow on the right
         }}
       >
         <img

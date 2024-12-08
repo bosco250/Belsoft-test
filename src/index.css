@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
-body{
-  overflow-x:hidden ;
+body {
+  overflow-x: hidden;
 }
 .image-container::before {
   content: "";
-  background-image: url('./assets/Vector1.png');
+  background-image: url("./assets/Vector1.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;

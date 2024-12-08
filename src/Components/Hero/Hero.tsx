@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import ArrowImage from "../../assets/Right arrow.png";
 import CofeOne from "../../assets/one.png";
 import two from "../../assets/mawitch.png";
@@ -15,7 +16,13 @@ function Hero() {
   return (
     <div className="px-4 md:px-8 lg:px-14 max-w-screen-xl mx-auto py-12 mt-20 flex overflow-hidden bg-white">
       <div className="w-full flex flex-col md:flex-row">
-        <div className="w-full md:w-[60%] flex flex-col pr-0 md:pr-10">
+        {/* Left Content with Framer Motion Animation */}
+        <motion.div
+          initial={{ x: -150, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="w-full md:w-[60%] flex flex-col pr-0 md:pr-10"
+        >
           <p className="text-[12px] font-semibold">
             Join our premier monthly meetup for startup founders and tech visionaries
           </p>
@@ -57,9 +64,13 @@ function Hero() {
             <span>Become a collaborator today</span>{" "}
             <BsBoxArrowUpRight size={15} />
           </p>
-        </div>
+        </motion.div>
 
-        <div className="image-container hidden w-full md:w-[40%] z-10 md:block relative mt-10 md:mt-0 h-[400px] md:h-auto">
+        {/* Right Content - Image Container */}
+        <motion.div
+          initial={{ x: 150, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }} className="image-container hidden w-full md:w-[40%] z-10 md:block relative mt-10 md:mt-0 h-[400px] md:h-auto">
           <div className="absolute top-0 md:top-16 left-0 md:left-5 z-0 w-[150px] md:w-auto">
             <Card
               imageSrc={MyImage}
@@ -92,7 +103,7 @@ function Hero() {
               rotation="0deg"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
